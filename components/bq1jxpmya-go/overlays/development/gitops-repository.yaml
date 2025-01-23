@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: bq1jxpmya-go-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/bq1jxpmya-go-gitops

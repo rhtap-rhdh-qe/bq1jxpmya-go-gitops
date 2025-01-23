@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: bq1jxpmya-go-gitops
+  description: This is GitOps manifest for bq1jxpmya-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: bq1jxpmya-go
+    backstage.io/kubernetes-id: bq1jxpmya-go 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: bq1jxpmya-go   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:bq1jxpmya-go
